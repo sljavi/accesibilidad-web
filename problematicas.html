@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Accesibilidad Web - Problemáticas</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav role="menu"  id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="/index.html">Accesibilidad Web</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="page-scroll">
+              <a href="/beneficios.html">Beneficios</a>
+            </li>
+            <li class="page-scroll">
+              <a href="/mitos.html">Mitos</a>
+            </li>
+            <li class="page-scroll">
+              <a href="/pautas.html">Pautas</a>
+            </li>
+            <li class="page-scroll">
+              <a href="/problematicas.html">Problemáticas</a>
+            </li>
+            <li class="page-scroll">
+              <a href="/discapacidad.html">Discapacidad</a>
+            </li>
+            <li class="page-scroll">
+              <a href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <section>
+      <div class="container">
+        <h1>¿Qué es un CAPTCHA? Problemas de accesibilidad</h1>
+        <p>
+          Los captchas, esas imágenes con letras y números distorsionados que hay que descifrar para completar muchos formularios
+          son cada vez más difíciles, se aplican más variaciones, más distorsiones y se introduce más ruido para dificultar
+          la resolución automática por parte de los ordenadores, pero a su vez también son más difíciles para las personas.
+        </p>
+        <p>
+          Desgraciadamente, los captchas que normalmente se emplean presentan problemas de accesibilidad para
+          algunos grupos de usuarios. En concreto, los captcha bloquean el acceso a muchos usuarios que padecen algún tipo de discapacidad.
+          Las personas con visión reducida, como pueden ser los daltónicos que tienen dificultades para distinguir algunas combinaciones de colores
+          o las personas que usan magnificadores de pantalla para ampliar el tamaño de lo que se visualiza en una pantalla
+          pueden tener graves problemas para distinguir el texto que se muestra en un captcha.
+          Por otro lado, es evidente que las personas ciegas que utilizan un lector de pantalla no pueden contestar los captcha
+          basados en imágenes con texto en su interior, ya que estas imágenes no pueden incluir en el atributo "alt" de la etiqueta &lt;img&gt;
+          el texto que aparece escrito en los captcha, ya que entonces un ordenador también lo podría leer y podría pasar la prueba.
+          Además, las personas con algún tipo de discapacidad cognitiva o intelectual como la dislexia,
+          también pueden tener problemas a la hora de interpretar el texto que contiene un captcha.
+        </p>
+        <p>
+          El problema de los captcha aparece como uno de los principales problemas de accesibilidad de las páginas web en la actualidad.
+        </p>
+        <h2><a href="http://youtu.be/T2hBbdLwR5o">¿Qué es un CAPTCHA? Problemas de accesibilidad (1/2)</a></h2>
+        <div class="videoWrapperMax">
+          <div class="videoWrapper">
+            <iframe title="¿Qué es un CAPTCHA? Problemas de accesibilidad (1/2) (YouTube)" src="http://www.youtube.com/embed/T2hBbdLwR5o?rel=0" style="border: 0"></iframe>
+          </div>
+        </div>
+        <p>
+          Si no puedes ver el vídeo, prueba con alguno de los siguientes enlaces:
+        </p>
+        <ul>
+          <li><a href="http://www.youtube.com/watch?v=T2hBbdLwR5o">¿Qué es un CAPTCHA? Problemas de accesibilidad (1/2) (YouTube)</a></li>
+        </ul>
+        <h3>Transcripción</h3>
+        <p>
+          Hola, soy Sergio Luján Mora, profesor de la Universidad de Alicante, y con este videotutorial vas a aprender
+          los problemas de accesibilidad que presentan los captcha.
+        </p>
+        <p>
+          En primer lugar, recordemos qué es un captcha. CAPTCHA es el acrónimo de
+          "Completely Automated Public Turing test to tell Computers and Humans Apart"
+          .
+        </p>
+        <p>
+          Traducido al castellano, "Prueba de Turing pública y automática para diferenciar máquinas y humanos"
+          .
+        </p>
+        <p>
+          Un captcha es una prueba de tipo desafío-respuesta que se utiliza para determinar cuándo el usuario
+          de un sistema informático es o no humano
+          .
+        </p>
+        <p>
+          Los captchas son esas imágenes con letras y números distorsionados que vemos en muchas páginas web como son
+          los formularios de registro, las páginas de envío de comentarios a foros y blogs, y muchas otras páginas
+          .
+        </p>
+        <p>
+          El objetivo de un captcha es distinguir a un ordenador de un ser humano, y de este modo,
+          impedir que los robots (también llamados bots) realicen un uso indebido de un servicio,
+          como por ejemplo enviar comentarios automáticos con spam a un foro o un blog
+          .
+        </p>
+        <p>
+          El captcha se sustenta en la idea de que un ser humano podrá resolver la prueba sin problemas,
+          mientras que un ordenador tendrá muchas dificultades o será incapaz de hacerlo y por tanto,
+          de este modo lograremos impedir su acceso
+          .
+        </p>
+        <p>
+          Desgraciadamente, cada vez más los captcha son más difíciles, se aplican más variaciones, más distorsiones y se introduce más ruido
+          para dificultar la resolución por parte de los ordenadores, pero a su vez también son más difíciles para las personas
+          .
+        </p>
+        <p>
+          Pero además, este tipo de captcha que se emplea normalmente, una imagen con texto distorsionado,
+          no puede ser utilizado por algunos grupos de usuarios
+          .
+        </p>
+        <p>
+          En concreto, los captcha bloquean el acceso a muchos usuarios que padecen algún tipo de discapacidad
+          .
+        </p>
+        <p>
+          Las personas con visión reducida, como pueden ser los daltónicos que tienen dificultades para distinguir
+          algunas combinaciones de colores o las personas que usan magnificadores de pantalla
+          para ampliar el tamaño de lo que se visualiza en una pantalla pueden tener graves problemas para distinguir el texto
+          que se muestra en un captcha
+          .
+        </p>
+        <p>
+          Por otro lado, es evidente que las personas ciegas que utilizan un lector de pantalla
+          no pueden contestar los captcha basados en imágenes con texto en su interior,
+          ya que estas imágenes no pueden incluir en el atributo "alt" de la etiqueta &lt;img&gt;
+          el texto que aparece escrito en los captcha, ya que entonces un ordenador también lo podría leer y podría pasar la prueba
+          .
+        </p>
+        <p>
+          Además, las personas con algún tipo de discapacidad cognitiva o intelectual como la dislexia, también pueden tener problemas
+          a la hora de interpretar el texto que contiene un captcha
+          .
+        </p>
+        <p>
+          El problema de los captcha aparece como uno de los principales problemas de accesibilidad
+          de las páginas web en la actualidad
+          .
+        </p>
+        <p>
+          WebAIM, una organización dedicada al estudio y divulgación de la accesibilidad web,
+          ha realizado en los últimos años varias encuestas
+          sobre el uso de lectores de pantalla (en inglés, screenreaders)
+          .
+        </p>
+        <p>
+          Los lectores de pantalla son el software que emplean
+          las personas ciegas o con graves problemas de visión
+          para utilizar el ordenador y, por tanto, navegar por la Web
+          .
+        </p>
+        <p>
+          La segunda encuesta que realizaron en octubre de 2009
+          tenía varias preguntas sobre el empleo de imágenes en las páginas web
+          .
+        </p>
+        <p>
+          También había una pregunta sobre qué elementos
+          eran los más problemáticos (difíciles y confusos) de las páginas web
+          .
+        </p>
+        <p>
+          En los resultados obtenidos, los captcha aparecían en la primera posición,
+          con un 28% de las respuestas
+          .
+        </p>
+        <p>
+          Por ello, los captcha suponen un grave problema de accesibilidad,
+          que impide la participación activa en Internet de algunos usuarios
+          .
+        </p>
+        <p>
+          Por ejemplo, la famosa enciclopedia Wikipedia
+          muestra un captcha cuando se quiere modificar un artículo
+          .
+        </p>
+        <p>
+          Por tanto, una persona ciega no puede crear contenido en la Wikipedia
+          .
+        </p>
+        <p>
+          O el sistema de correo de Yahoo! también muestra un captcha
+          .
+        </p>
+        <p>
+          En estos servicios, una persona con discapacidad
+          necesita la ayuda de otra persona para poder participar
+          .
+        </p>
+        <p>
+          ¿No existe alguna alternativa?
+        </p>
+        <p>
+          ¿No existen captchas accesibles?
+        </p>
+        <p>
+          Existen algunas alternativas, como vamos a ver a continuación,
+          pero todas tienen algún problema
+          y no hay ninguna alternativa que sea la solución perfecta
+          .
+        </p>
+        <p>
+          Por ejemplo, cuando se quiere obtener una cuenta en Google Accounts
+          para utilizar un servicio como Blogger o Gmail,
+          se proporciona un captcha alternativo para las personas ciegas
+          que consiste en escuchar un fragmento sonoro
+          y escribir las letras y números que se escuchan
+          .
+        </p>
+        <p>
+          Este sistema también lo utilizan otras páginas web, como la de registro en Windows Live
+          .
+        </p>
+        <p>
+          Vamos a probarlo
+          .
+        </p>
+        <p>
+          Nos vamos a un navegador
+          .
+        </p>
+        <p>
+          Estamos en la página de Windows Live para crear una cuenta nueva.
+        </p>
+        <p>
+          Y tenemos este captcha visual con dos palabras
+          que hay que escribir en este cuadro de texto.
+        </p>
+        <p>
+          Además, tenemos la posibilidad de alternar a un captcha sonoro.
+        </p>
+        <p>
+          Vamos a probarlo y vamos a ver qué se escucha.
+        </p>
+        <p>
+          [Se escucha el captcha: unos números con ruido de fondo]
+          Hemos oído como se han nombrado unos números
+          que tendríamos que escribir en este cuadro de texto.
+        </p>
+        <p>
+          Pero, al igual que el captcha visual, el captcha sonoro también incluye cierta distorsión,
+          con lo cual a menudo son ininteligibles.
+        </p>
+        <p>
+          Además, requieren de un ambiente silencioso
+          para poder ser entendidos correctamente.
+        </p>
+        <p>
+          También presentan un problema importante:
+          el navegador del usuario debe admitir JavaScript
+          y debe poseer ciertos complementos para poder reproducir el fragmento sonoro.
+        </p>
+        <p>
+          Por último, los usuarios sordociegos,
+          no podrán acceder ni al captcha visual ni al captcha sonoro.
+        </p>
+        <p>
+          Comprobemos otro tipo de sitios web.
+        </p>
+        <p>
+          ¿Son las redes sociales tan "sociales" como nos prometen?
+          Hagamos una prueba con Twitter,
+          vamos a ver que pasa con su captcha en la página de registro.
+        </p>
+        <p>
+          Nos vamos otra vez al navegador, a la página principal de Twitter.
+        </p>
+        <p>
+          Nos vamos a registrar como un nuevo usuario,
+          este es el formulario de registro, como vemos esta en castellano.
+        </p>
+        <p>
+          Pulso en el botón "Crear mi cuenta" y me aparece un captcha visual
+          para que escriba las dos palabras que aparecen en la imagen.
+        </p>
+        <p>
+          Además, también tenemos la opción de alternar a un captcha sonoro.
+        </p>
+        <p>
+          Vamos a oírlo
+          .
+        </p>
+        <p>
+          [Se escucha una explicación en inglés]
+        </p>
+        <p>
+          [Se escucha el captcha: palabras con ruido de fondo]
+        </p>
+        <p>
+          [Se vuelve a escuchar todo una vez más]
+        </p>
+        <p>
+          Como vemos, bastante sorprendente,
+          el formulario está en castellano, pero el captcha sonoro está en inglés.
+        </p>
+        <p>
+          Para solucionar el problema de accesibilidad de los captcha
+          han surgido algunas propuestas interesantes, pero ninguna es la panacea.
+        </p>
+        <p>
+          WebVisum es un complemento para Firefox que permite
+          a los usuarios con problemas de visión o con ceguera
+          navegar e interactuar con las páginas web de una forma más sencilla.
+        </p>
+        <p>
+          Entre sus funciones existe una ayuda para resolver los captcha.
+        </p>
+        <p>
+          Este complemento para Firefox permite enviar a la gente de Webvisum
+          la imagen de un captcha, ellos solucionan el captcha
+          y devuelven la solución a quien lo ha solicitado.
+        </p>
+        <p>
+          En concreto:
+          Supongamos que hemos accedido a una página web que contiene un captcha.
+        </p>
+        <p>
+          Se pulsa el botón derecho del ratón sobre el captcha
+          y se selecciona "Solve CAPTCHA" en el menú contextual.
+        </p>
+        <p>
+          Con esto enviamos el captcha a la gente de Webvisum.
+        </p>
+        <p>
+          Una notificación informa de que el captcha ha sido enviado
+          y se está procesando, el tiempo de resolución depende de diversos factores.
+        </p>
+        <p>
+          Cuando la solución del captcha se recibe, se muestra otra notificación
+          con la solución y se indica que también se ha copiado al portapapeles.
+        </p>
+        <p>
+          Se selecciona el cuadro de texto correspondiente y se pega la solución.
+        </p>
+        <p>
+          Y, de esta forma, el formulario ya se puede enviar.
+        </p>
+        <p>
+          Otra iniciativa parecida es la que ofrece el proyecto Solona,
+          una comunidad de usuarios que ayudan a resolver los captcha
+          a los usuarios ciegos registrados en su web.
+        </p>
+        <p>
+          Este sistema es similar al anterior: una persona examina el captcha
+          y lo resuelve de forma confidencial, enviando el resultado al otro usuario ciego.
+        </p>
+        <p>
+          Sin embargo, como ya he comentado antes,
+          estos sistemas no son la solución universal,
+          más aún cuando están apareciendo nuevos tipos de captcha
+          que son aún más inaccesibles para algunos grupos de usuarios.
+        </p>
+        <p>
+          Veamos algunas propuestas novedosas de captcha
+          .
+        </p>
+        <p>
+          Por ejemplo, en el sitio web "They Make Apps" emplean un captcha
+          que consiste en una barra de desplazamiento que hay que mover hasta cierto punto.
+        </p>
+        <p>
+          Evidentemente, una persona ciega no puede resolver este captcha
+          ni tampoco se puede resolver de formar remota
+          empleando un sistema como Webvisum o Solona.
+        </p>
+        <p>
+          Otra propuesta es la que podemos encontrar en el sitio web "Web Design beach"
+          donde hay que arrastrar un objeto hasta una zona de la página.
+        </p>
+        <p>
+          Vamos a probarlo.
+        </p>
+        <p>
+          Nos vamos al navegador, a la página de "Web Design beach"
+          y aquí tenemos el captcha visual.
+        </p>
+        <p>
+          En este captcha, nos dan la instrucción de que para verificar que somos humanos
+          debemos arrastrar el corazón al círculo.
+        </p>
+        <p>
+          Si yo intento arrastrar cualquier otra de las imágenes, no podré,
+          solamente puedo arrastrar el corazón.
+        </p>
+        <p>
+          Y con esto ya podría enviar el formulario correctamente.
+        </p>
+        <p>
+          Otro captcha alternativo es el de "Animal Captcha Test",
+          donde hay que escribir el animal que aparece en una imagen distorsionada.
+        </p>
+        <p>
+          Evidentemente, este captcha también es inaccesible
+          para una persona ciega o con problemas cognitivos
+          y seguramente mucha gente también tendrá problemas
+          a la hora de nombrar ciertos animales.
+        </p>
+        <p>
+          Otra captcha alternativo es el que podemos encontrar en "Captcha The Dog",
+          donde se muestran nueve fotografías de animales y hay que acertar cuál es el perro.
+        </p>
+        <p>
+          El proceso se repite un cierto número de veces
+          hasta que todas las fotografías son del mismo animal,
+          en este caso de gatos.
+        </p>
+        <p>
+          Vamos a probarlo
+          .
+        </p>
+        <p>
+          Nos vamos al navegador, a la página web de "Captcha The Dog",
+          y aquí tenemos el captcha.
+        </p>
+        <p>
+          Y nos pregunta "cuál de estas cosas no es igual a las otras".
+        </p>
+        <p>
+          Tenemos nueve fotografías, como podemos ver,
+          ocho son de gato y hay una, que está aquí, que es un perro.
+        </p>
+        <p>
+          La selecciono y se vuelve a cargar otro conjunto de fotografías
+          donde ocurre lo mismo, ocho son de gato y una de perro.
+        </p>
+        <p>
+          Vuelvo a seleccionar el perro y se vuelven a cargar nueve fotografías.
+        </p>
+        <p>
+          Otra vez, tenemos ocho de gato y una de perro.
+        </p>
+        <p>
+          Y, ya por fin, tenemos nueve fotografías que son de lo mismo, de gato.
+        </p>
+        <p>
+          Cuando todas las fotografías son iguales, ya podemos enviar el formulario.
+        </p>
+        <p>
+          Otra propuesta es la de "Imagination", donde se utiliza un doble sistema.
+        </p>
+        <p>
+          En la primera prueba se muestra una imagen compuesta de varias imágenes
+          y hay que marcar el centro geométrico de alguna de ellas.
+        </p>
+        <p>
+          Por ejemplo, si yo elijo esta imagen,
+          su centro geométrico estaría más o menos por aquí.
+        </p>
+        <p>
+          En la segunda prueba de este captcha se muestra una imagen distorsionada
+          que hay que etiquetar eligiendo una etiqueta de un conjunto que se propone.
+        </p>
+        <p>
+          En este ejemplo, tendría que elegir la etiqueta "man" (hombre, en inglés).
+        </p>
+        <p>
+          Otra propuesta es la de "Yuniti",
+          donde se emplea un captcha que consiste
+          en reconocer modelos tridimensionales de objetos y animales.
+        </p>
+        <p>
+          Se muestra esta imagen con tres objetos, y para cada uno de ellos,
+          hay que seleccionar un objeto similar de entre este conjunto de objetos.
+        </p>
+        <p>
+          Otro captcha alternativo es el que propone "NuCaptcha Engage",
+          donde se emplea un captcha parecido a los que estamos acostumbrados,
+          pero en vez de emplear una imagen se utiliza un vídeo.
+        </p>
+        <p>
+          Veamos como funciona.
+        </p>
+        <p>
+          Nos vamos a la página de "NuCaptcha Engage"
+          y aquí tenemos el captcha basado en vídeo.
+        </p>
+        <p>
+          Sobre un vídeo se muestra cierto texto en movimiento.
+        </p>
+        <p>
+          Y nosotros, lo que tenemos que hacer es escribir las tres letras
+          que aparecen en rojo.
+        </p>
+        <p>
+          Finalmente, otra propuesta es la que han desarrollado
+          unos ingenieros de Google y que fue presentada
+          en la World Wide Web Conference de 2009 que se celebró en Madrid.
+        </p>
+        <p>
+          En esta propuesta, el captcha consiste en identificar
+          la correcta orientación de una fotografía.
+        </p>
+        <p>
+          Para ello se emplea una barra de desplazamiento
+          que permite girar 360º la imagen que se tiene que orientar.
+        </p>
+        <p>
+          Esta claro que esta solución tampoco es accesible,
+          ya que las personas con deficiencia visual no lo podrán responder.
+        </p>
+        <p>
+          En resumen,
+          hemos visto que los captcha que se emplean actualmente
+          son inaccesibles para algunos grupos de usuarios.
+        </p>
+        <p>
+          Lo mismo ocurre con los nuevos captcha que se están proponiendo.
+        </p>
+        <p>
+          Pero es que además,
+          los nuevos captcha son cada vez más complejos, más difíciles de entender.
+        </p>
+        <p>
+          Y, por supuesto,
+          en algunos de ellos existe la barrera del idioma,
+          como hemos visto, que no solo afecta a las personas con discapacidad.
+        </p>
+        <p>
+          Y con esto finalizo este videotutorial en el que te he explicado
+          cuales son los problemas de accesibilidad que presentan los captcha.
+        </p>
+        <p>
+          En la próxima parte de este videotutorial veremos qué soluciones hay
+          a los captcha no accesibles.
+        </p>
+        <p>
+          Si necesitas más información o quieres contactar conmigo,
+          aquí tienes los datos.
+        </p>
+        <h2><a href="http://youtu.be/6BbfcGs2VLI">¿Qué es un CAPTCHA? Problemas de accesibilidad (2/2)</a></h2>
+        <div class="videoWrapperMax">
+          <div class="videoWrapper">
+            <iframe title="¿Qué es un CAPTCHA? Problemas de accesibilidad (2/2) (YouTube)" src="http://www.youtube.com/embed/6BbfcGs2VLI?rel=0" style="border: 0"></iframe>
+          </div>
+        </div>
+        <p>
+          Si no puedes ver el vídeo, prueba con alguno de los siguientes enlaces:
+        </p>
+        <ul>
+          <li><a href="http://www.youtube.com/watch?v=6BbfcGs2VLI">¿Qué es un CAPTCHA? Problemas de accesibilidad (2/2) (YouTube)</a></li>
+        </ul>
+        <h3>Transcripción</h3>
+        <p>
+          Hola, soy Sergio Luján Mora, profesor de la Universidad de Alicante,
+          y con este videotutorial vas a aprender
+          los problemas de accesibilidad que presentan los captcha.
+          En la parte anterior de este videotutorial vimos los problemas de accesibilidad
+          que presentan los captcha que se emplean normalmente.
+        </p>
+        <p>
+          En esta segunda parte del videotutorial vamos a ver
+          que soluciones hay para que los captcha sean accesibles.
+        </p>
+        <p>
+          El World Wide Web Consortium,
+          el consorcio internacional que desarrolla recomendaciones para la Web,
+          como HTML o CSS,
+          publicó en el año 2005 una nota donde analizaba el problema de los captcha
+          y proponía seis posibles soluciones.
+        </p>
+        <p>
+          Desgraciadamente,
+          estas soluciones tampoco son la panacea
+          (por eso propone seis soluciones)
+          y algunas son muy difíciles de conseguir.
+        </p>
+        <p>
+          Por otro lado,
+          hay desarrolladores que han propuesto algunas alternativas a los captcha visuales.
+        </p>
+        <p>
+          Estas alternativas se basan en el uso de captcha textual en vez de visual.
+        </p>
+        <p>
+          Los desarrolladores que proponen estos captcha
+          afirman que son accesibles,
+          aunque esto no es del todo cierto, como veremos a continuación.
+        </p>
+        <p>
+          Por ejemplo,
+          en el portal Discapnet dedicado a las personas con discapacidad,
+          se emplea un captcha donde se debe introducir la respuesta
+          a una operación matemática sencilla.
+        </p>
+        <p>
+          Este captcha presenta un problema de accesibilidad,
+          ya que las personas con discapacidad cognitiva o intelectual pueden tener problemas.
+        </p>
+        <p>
+          Además, es una mala solución ya que es fácil de sortear:
+          no es difícil hacer un programa que calcule el resultado de la operación matemática.
+        </p>
+        <p>
+          En la web manualdeusuario.
+        </p>
+        <p>es,
+          se emplea un captcha donde hay que responder una pregunta sencilla
+          como cuál es el color de la hierba
+          o de qué color es la nieve.
+        </p>
+        <p>
+          Esta solución plantea otra vez varios problemas.
+        </p>
+        <p>
+          En primer lugar,
+          otra vez las personas con discapacidad cognitiva o intelectual
+          pueden tener problemas para resolver el captcha.
+        </p>
+        <p>
+          Además, como podemos ver en este mismo ejemplo,
+          existe el problema de la barrera del idioma.
+        </p>
+        <p>
+          Y por último,
+          ¿cuántas preguntas se pueden crear?
+          Un buen captcha debe tener un número ilimitado de preguntas,
+          que deben ser fáciles de crear y a ser posible de un modo automático.
+        </p>
+        <p>
+          Este tipo de captcha sólo permite un conjunto limitado de preguntas.
+        </p>
+        <p>
+          Otro ejemplo de intento de captcha accesible
+          lo podemos encontrar en el sitio web alzado.org,
+          en el que se emplean varios tipos de captcha.
+        </p>
+        <p>
+          Por ejemplo,
+          en este es necesario escribir la palabra
+          que aparece en la tabla en las coordenadas indicadas.
+        </p>
+        <p>
+          En este caso, sería la palabra guisante.
+        </p>
+        <p>
+          Y en este otro tipo,
+          se tiene que contestar la pregunta de cultura general que se realiza.
+        </p>
+        <p>
+          En este caso se pregunta
+          .
+        </p>
+        <p>El monumento de la foto se encuentra en el país de...
+          Como la foto muestra la Torre Eiffel,
+          hay que contestar Francia.
+        </p>
+        <p>
+          Algunos problemas que presenta esta solución
+          son similares a los de las propuestas anteriores:
+          puede haber problemas con el nivel de cultura,
+          las personas con discapacidad cognitiva
+          también pueden tener problemas
+          y continúa existiendo el problema de la barrera del idioma.
+        </p>
+        <p>
+          Otra propuesta es el llamado Heyes Captcha,
+          en la que el usuario tiene que pulsar una serie de teclas
+          durante una serie de segundos para demostrar que es un ser humano.
+        </p>
+        <p>
+          Vamos a probarlo.
+        </p>
+        <p>
+          Nos vamos al navegador.
+        </p>
+        <p>
+          Aquí estamos en la página web de Heyes Captcha.
+        </p>
+        <p>
+          Y, las instrucciones nos dicen que tenemos que apretar la tecla E por 4 segundos.
+        </p>
+        <p>
+          Para ello, nos situamos en esta casilla y pulsamos la tecla E.
+        </p>
+        <p>
+          Vemos como el contador va avanzando y cuando llegue a 4, soltamos.
+        </p>
+        <p>
+          Ahora nos dice que tenemos que pulsar la tecla J por 5 segundos.
+        </p>
+        <p>
+          Así que repetimos la operación, pulsamos la tecla J durante 5 segundos.
+        </p>
+        <p>
+          Y ahora pulsamos la tecla E por 2 segundos,
+          y vemos que hemos pasado el test.
+        </p>
+        <p>
+          Desgraciadamente,
+          un sistema como este supone un problema de accesibilidad
+          para aquellas personas que sufran algún tipo de discapacidad física
+          que implique movilidad reducida,
+          como puede ser la parálisis cerebral o la distrofia muscular,
+          y que impida un control preciso de los interfaces de usuario.
+        </p>
+        <p>
+          La idea más original y, quizás, la que más futuro tiene,
+          es la que encontramos en el llamado Honeypot Captcha,
+          el .captcha del tarro de miel.
+        </p>
+        <p>
+          En informática se denomina .honeypot.
+          a un sistema que en realidad es una trampa,
+          y cuya intención es atraer a los posibles atacantes
+          de un sistema que se quiere proteger.
+        </p>
+        <p>
+          La idea del Honeypot Captcha es ofrecer a los .bots. un .tarro de miel.,
+          para que acudan a él como las moscas a la miel.
+        </p>
+        <p>
+          Sin embargo, se supone que un ser humano no caerá en la trampa.
+        </p>
+        <p>
+          ¿Cómo funciona el Honeypot Captcha?
+          Normalmente, una página web se compone al menos de dos partes:
+          el código HTML y el código CSS.
+        </p>
+        <p>
+          El código HTML define la estructura y contenido de la página web,
+          mientras que el código CSS define la presentación de la página web
+          (los colores, los tipos de letra, las posiciones, etc.).
+        </p>
+        <p>
+          La clave del captcha del .tarro de miel.
+          es explotar el hecho de que la mayoría de los .bots. actuales
+          no interpretan el código CSS.
+        </p>
+        <p>
+          Veamos un ejemplo sencillo de esta trampa.
+        </p>
+        <p>
+          Por un lado,
+          tenemos el código HTML de un formulario para dejar comentarios en un blog,
+          que define un formulario similar a este.
+        </p>
+        <p>
+          Este formulario se compone de los siguientes campos:
+          el nombre,
+          el email,
+          el comentario
+          y un campo que hay que dejar vacío y que es el .tarro de miel.
+        </p>
+        <p>
+          Por otro lado,
+          tenemos el código CSS que oculta el campo del formulario
+          que hace la función del .tarro de miel..
+        </p>
+        <p>
+          Como he dicho antes,
+          la clave de esta trampa es explotar el hecho de que
+          la mayoría de los bots no interpretan el código CSS.
+        </p>
+        <p>
+          Un ser humano que utilice un navegador web normal
+          verá la página web con la presentación definida en el CSS,
+          y por tanto,
+          el campo que hay que dejar vacío no lo verá
+          y evidentemente, lo dejará vacío.
+        </p>
+        <p>
+          Sin embargo,
+          un bot verá la página web sin el CSS,
+          verá el campo que hay que dejar vacío, y lo rellenará.
+        </p>
+        <p>
+          Por tanto,
+          cuando se reciba un comentario en el servidor,
+          si se detecta información en el campo
+          .
+        </p>
+        <p>Este campo hay que dejarlo vacío.
+        </p>
+        <p>,
+          se supondrá que es un bot quien está enviado el comentario,
+          y se rechazará.
+        </p>
+        <p>
+          Esta solución es muy simple y a su vez muy buena,
+          ya que es muy fácil de implementar
+          y es transparente para el usuario.
+        </p>
+        <p>
+          Y por ser transparente,
+          es totalmente accesible.
+        </p>
+        <p>
+          Sin embargo,
+          ¿qué ocurre cuando un usuario utiliza un navegador que no interpreta CSS?
+          Además,
+          la clave de este captcha es explotar el hecho de que en la actualidad
+          la mayoría de los bots no interpretan el código CSS,
+          pero no es raro suponer que en un futuro cercano
+          sí que lo harán, y entonces este captcha dejará de ser útil.
+        </p>
+        <p>
+          Otro captcha ingenioso es el que emplea WP Hashcash,
+          un .
+        </p>
+        <p>plugin.
+        </p>
+        <p> para Wordpress, una de las plataformas de blog más extendida.
+        </p>
+        <p>
+          En este caso,
+          la clave de este captcha es explotar el hecho
+          de que la mayoría de los bots tampoco interpretan el código JavaScript.
+        </p>
+        <p>
+          Este .plugin. genera una función con valores aleatorios
+          cada vez que se accede a una página con un formulario
+          para dejar un comentario.
+        </p>
+        <p>
+          Cuando se envía un comentario,
+          también se envía el resultado de esta función.
+        </p>
+        <p>
+          Si quien intenta enviar un comentario es un bot,
+          no ejecutará el código JavaScript,
+          no enviará el resultado de esta función,
+          y el comentario será rechazado.
+        </p>
+        <p>
+          Esta solución tiene el mismo punto débil que el captcha del .tarro de miel.:
+          los bots actuales no ejecutan JavaScript,
+          pero no es raro suponer que en un futuro cercano sí que lo harán
+          y entonces, este captcha dejará de ser útil.
+        </p>
+        <p>
+          Sin embargo,
+          este captcha tiene una característica más
+          que solventa esta posible situación futura.
+        </p>
+        <p>
+          El cálculo que realiza la función de JavaScript es lo que se conoce como
+          .proof-of-work.,
+          traducido al castellano
+          .prueba de trabajo..
+        </p>
+        <p>
+          La clave del .proof-of-work. es su asimetría:
+          el trabajo debe ser moderadamente difícil (pero factible)
+          por el lado del cliente,
+          pero fácil de verificar
+          por el lado del servidor.
+        </p>
+        <p>
+          El cliente debe dedicar un tiempo a calcular el resultado del trabajo,
+          por lo que supondrá una gran penalización para un bot.
+          que intenta enviar miles y miles de comentarios,
+          ya que tendrá que repetir este trabajo miles y miles de veces.
+        </p>
+        <p>
+          Sin embargo,
+          para un único usuario no supone una penalización apreciable,
+          ya que solamente lo hará una vez.
+        </p>
+        <p>
+          Además,
+          al ser asimétrica la prueba de trabajo,
+          el servidor puede verificar el resultado en un tiempo casi nulo.
+        </p>
+        <p>
+          Las ventajas y desventajas de esta propuesta
+          son similares a las del captcha del .tarro de miel. que emplea CSS:
+          es simple, transparente y accesible,
+          siempre que el usuario utilice un navegador que admita JavaScript.
+        </p>
+        <p>
+          Para finalizar.
+        </p>
+        <p>
+          Hemos visto los problemas de accesibilidad que presentan los captcha actuales.
+        </p>
+        <p>
+          Los nuevos captcha que se están proponiendo no solucionan este problema,
+          ya que siguen siendo no accesibles.
+        </p>
+        <p>
+          Incluso aquellos que se proponen como accesibles,
+          en el fondo no lo son.
+        </p>
+        <p>
+          La solución es emplear algún tipo de captcha transparente
+          que no afecte a la interacción de un usuario con una página web.
+        </p>
+        <p>
+          Hemos visto dos soluciones de este tipo,
+          una basada en el empleo de CSS,
+          y otra basada en el empleo de JavaScript.
+        </p>
+        <p>
+          Pero tampoco son la solución completa.
+        </p>
+        <p>
+          En realidad,
+          es difícil que se llegue algún día a una solución total,
+          ya que este es el típico juego del gato y el ratón,
+          donde cada vez que se plantea un nuevo tipo de captcha,
+          aparece un truco para saltarse ese captcha.
+        </p>
+        <p>
+          Y con esto finalizo este videotutorial
+          en el que te he explicado cuales son los problemas de accesibilidad
+          que presentan los captcha y qué posibles soluciones
+          existen hoy en día para lograr que un captcha sea accesible
+          .
+        </p>
+        <p>
+          Si necesitas más información o quieres contactar conmigo,
+          en la página web http://accesibilidadweb.dlsi.uaes
+          podrás encontrar más información sobre accesibilidad web
+          o también puedes contactar directamente conmigo
+          a través de mi dirección de correo electrónico
+          sergio.lujan@ua.es
+        </p>
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Fuente</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <p style="text-align: center;">
+                <a style="color: white; text-decoration: underline; font-size: 1.5em;" href="http://accesibilidadweb.dlsi.ua.es/">www.accesibilidadweb.dlsi.ua.es</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-6">
+                        <div class="row">
+                            <div class="footer-col col-md-3">
+                                <img src="img/unlp.png" alt="unlp" width="80" height="98" />
+                            </div>
+                            <div class="footer-col col-md-9" style="text-align: center">
+                                <h4>Universidad Nacionale de la Plata</h4>
+                                <p>Facultad de Informática</p>
+                                <p>Diseño de Experiencia de Usuario (2016)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-col col-md-6">
+                        <h4>Grupo</h4>
+                        <p>Javier Perez</p>
+                        <p>Matias Fuentes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Accesibilidad Web 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+</body>
+</html>
